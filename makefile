@@ -4,3 +4,7 @@ stop-simple:
 	docker stop metabase
 tty:
 	docker exec -it metabase /bin/bash
+start:
+	docker-compose -f docker-compose-metabase.yml up -d
+stop:
+	docker-compose -f docker-compose-metabase.yml down
